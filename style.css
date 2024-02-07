@@ -1,0 +1,139 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+}
+.scroll{
+    width: 100vw;
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+.scrolling{
+    scroll-snap-align: start;
+    
+}
+.top-nav{
+    text-align: center;
+    background-color: burlywood;
+    position: fixed;
+    width: 100vw;  
+}
+.top-nav ul li{
+    display: inline-block;
+}
+.top-nav ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 1px;
+    margin: 40px;
+    font-size: 30px;
+}
+main{
+    width: 100vw;
+}
+.home{
+    height: 100vh;   
+    background-image: url(./Sunrises_and_sunsets_Stones_Water_Scenery_Trees_558886_1280x722.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 200%;
+    padding: 10px;
+    scroll-snap-align: start;
+}
+.content{   
+    display: block;
+    text-align: center;
+    padding: 50px;
+    height: 100vh;
+    color: blue;
+    font-size: 30px;
+    font-weight: 800;
+    text-shadow: 5px 5px 5px black;
+}
+.skills{
+    height: 100vh;
+    background-color: blanchedalmond;
+}
+.contact{
+    height: 100vh;
+    background-color: bisque;
+    display:flex;
+    justify-content: center;
+    align-items: center;    
+}
+.formular{
+    border: 1px solid rgb(173, 230, 230);
+    box-shadow: 4px 4px 4px;
+    padding: 30px;
+    border-radius: 24px;
+    background-color: rgb(173, 240, 240);
+}
+.formular p{
+    color: red;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+}
+.formular label{
+    display: flex;
+    margin-bottom: 1px;
+    justify-content:start;
+    align-items:center;
+}
+.formular button{
+    background-color: aqua;
+    margin-left: 35%;
+    margin-right: 65%;
+    font-size: 20px;
+    border-radius: 16px;
+    transition-duration: 0.4s;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    margin-top: 10px;
+    box-shadow: -3px 3px 10px 5px;
+}
+.formular button:active{
+    background-color: red;
+    color: white;
+    box-shadow: none;
+    transform: translateY(4px);
+}
+footer{
+    bottom: 0;
+    background-color: burlywood;
+    text-align: center;
+    padding: 5px;
+    width: 100vw;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 24px;
+}
+table{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 120px;
+}
+th{
+    background-color: aquamarine;
+    border: 1px solid;
+}
+td{
+    color: green;
+    background-color: burlywood;
+    border: 1px solid;
+    text-align: center;
+}
+.fa-html5{
+    color: red;
+}
+.fa-css3-alt{
+    color: rgb(24, 53, 182);
+}
+
