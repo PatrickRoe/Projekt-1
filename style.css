@@ -5,6 +5,7 @@ body{
     display: flex;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+/* Seiten Scrollen */
 .scroll{
     width: 100vw;
     height: 100vh;
@@ -12,9 +13,11 @@ body{
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
 }
+/* Scroll Start */
 .scrolling{
     scroll-snap-align: start;
 }
+/* Navigation Bar */
 .top-nav{
     text-align: center;
     background-color:#db9242;
@@ -34,6 +37,7 @@ body{
 main{
     width: 100vw;
 }
+/* Erste Seite Hintergrundbild*/
 .home{
     height: 100vh;  
     background-image: url(./Sunrises_and_sunsets_Stones_Water_Scenery_Trees_558886_1280x722.jpg);
@@ -42,6 +46,7 @@ main{
     background-size: 220%;
     scroll-snap-align: start;
 }
+/* Erste Seite Content (text) */
 .content{   
     display: block;
     text-align: center;
@@ -54,23 +59,60 @@ main{
     -webkit-text-fill-color: white; /* Will override color (regardless of order) */
     -webkit-text-stroke: 1px black;
 }
+/* Zweite Seite, Höhe und Hintergrund Farbe */
 .skills{
     height: 100vh;
     background-color: #DBA742;
 }
+/* Tabelle  */
+table{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 120px;
+}
+.table-1{
+    border-spacing: 8px 8px;
+}
+th{
+    background-color: #dca764;
+    border: 1px solid;
+    border-radius: 5px;   
+}
+td{
+    color: green;
+    background-color: #dca764;
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 5px;
+}
+/* HTML und CSS Icon Farben */
+.fa-html5{
+    color: red;
+}
+.fa-css3-alt{
+    color: rgb(24, 53, 182);
+}
+
+/* Seite 3 Hintergrund */
 .contact{
     height: 100vh;
     background-color: #DBA742;
     display:flex;
     justify-content: center;
-    align-items: center;    
+    align-items: center;   
 }
 .formular{
     box-shadow: 4px 4px 4px;
     padding: 30px;
     border-radius: 24px;
     background-color: #E6C58F;
-    
+}
+.formular:hover{
+    border: 3px solid red;
+    transform: scale(1.2);
+    transition-duration: 1.5s;
 }
 /* Kontakt Formular Überschrift H1 */
 .formular p{
@@ -92,13 +134,14 @@ main{
     margin-right: 65%;
     font-size: 20px;
     border-radius: 16px;
-    transition-duration: 0.4s;
+    transition-duration: 0.6s;
     padding-bottom: 10px;
     padding-left: 10px;
     margin-top: 10px;
-    box-shadow: -3px 3px 10px 5px black;
+    box-shadow: -5px 5px 10px 5px black;
     color: #bf6708;
-}
+    border: black;
+} 
 .formular button:active{
     background-color: red;
     color: white;
@@ -124,34 +167,4 @@ footer{
     gap: 20px;
     font-size: 24px;
 }
-table{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    font-size: 120px;
-}
-.table-1{
-    border-spacing: 8px 8px;
-}
-th{
-    background-color: #dca764;
-    border: 1px solid;
-    border-radius: 5px;
-    
-}
-td{
-    color: green;
-    background-color: #dca764;
-    border: 1px solid black;
-    text-align: center;
-    border-radius: 5px;
-}
-.fa-html5{
-    color: red;
-}
-.fa-css3-alt{
-    color: rgb(24, 53, 182);
-}
-
 
